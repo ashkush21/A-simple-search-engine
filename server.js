@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/public'));
 // });
 
 
-mongoose.connect("mongodb://ash:ashkush1@ds263656.mlab.com:63656/flickzee", { useNewUrlParser: true });
+mongoose.connect("mongodb://ash:flick1zee@ds263656.mlab.com:63656/flickzee", { useNewUrlParser: true });
 
 
 
