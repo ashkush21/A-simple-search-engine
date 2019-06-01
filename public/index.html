@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+	<script src="https://code.angularjs.org/1.2.13/angular.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="searchPage">
+	<div  ng-controller="mainController" class="mainDiv">
+		<div>
+			<h1 class="heading">Search Movies</h1>
+		</div>
+
+		<div class="ui form" >
+			<div class="field">
+			<input type="text" class="input" name="movName" ng-model="searchString" placeholder="search movies" />	
+			</div>
+				
+				<button class="ui primary button">Search</button>
+		</div>
+		<div class="ui inverted segment">
+		<ul class="ui inverted relaxed divided list">
+			<li ng-repeat="m in movies | searchArr:searchString" class="item">
+				<p>{{m.movieName}}</p>
+			</li>
+		</ul>	
+		</div>
+		
+	</div>
+</body>
+</html>

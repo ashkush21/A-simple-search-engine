@@ -1,0 +1,14 @@
+.heading{
+	text-align: center;
+}
+
+.mainDiv{
+	padding-top: 70px;
+	margin: auto;
+	width: 700px;
+}
+
+
+.item {
+	font-size: 20px;
+}
