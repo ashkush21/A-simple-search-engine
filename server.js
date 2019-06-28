@@ -12,16 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public')); 
 
 
-// mongoose.connect("mongodb://localhost:27017/flickZee", { useNewUrlParser: true }, function(err) {
-//     if (err) {
-//         console.log('Not connected to the database: ' + err);
-//     } else {
-//         console.log('Successfully connected to MongoDB');
-//     }
-// });
 
-
-mongoose.connect("mongodb://ash:flick1zee@ds263656.mlab.com:63656/flickzee", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/Search_Engine", { useNewUrlParser: true });
 
 
 
